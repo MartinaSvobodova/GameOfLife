@@ -1,0 +1,2 @@
+[workspace]
+members = ["game_of_life_cli", "game_of_life_gui", "game_of_life_lib"]
