@@ -4,6 +4,14 @@ use std::ops::Not;
 pub enum Cell {
     Alive, Dead
 }
+impl From<bool> for Cell {
+    fn from(value: bool) -> Self {
+        match value {
+            true => Cell::Alive,
+            false => Cell::Dead,
+        }
+    }
+}
 impl ToString for Cell {
     fn to_string(&self) -> String {
         match self {
